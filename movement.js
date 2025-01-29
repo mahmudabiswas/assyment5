@@ -1,13 +1,12 @@
-// donation for Noakhali
+// Aid for Movement
 
 document
-  .getElementById("donateNowaKhali")
+  .getElementById("donateMovementBtn")
   .addEventListener("click", function (event) {
     event.preventDefault();
-    const donate = document.getElementById("donateNowaKhaliInput").value;
+    const donate = document.getElementById("donateMovementInput").value;
     const donateNumber = parseFloat(donate);
-
-    const donateTaka = document.getElementById("donateMoney").innerHTML;
+    const donateTaka = document.getElementById("donateMovement").innerHTML;
     const donateAmount = parseFloat(donateTaka);
 
     if (isNaN(donateNumber, donateAmount)) {
@@ -17,11 +16,11 @@ document
 
     const totalBalance = donateNumber + donateAmount;
 
-    document.getElementById("donateMoney").innerHTML = totalBalance;
+    document.getElementById("donateMovement").innerHTML = totalBalance;
 
     // history of donation money
     const div = document.createElement("div");
-    div.innerHTML = `<p class="py-10 my-2 border-2 px-5 text-4xl font-bold rounded-xl"> ${totalBalance} Donate for Flood at Noakhali, Bangladesh
+    div.innerHTML = `<p class="py-10 my-2 border-2 px-5 text-4xl font-bold rounded-xl"> ${totalBalance}  Taka is Donated for Aid for Injured in the Quota Movement, Bangladesh
 ${new Date()} 
 </p>
 `;

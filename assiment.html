@@ -32,202 +32,214 @@
       </header>
     </div>
     <!-- main part -->
-    <main>
-      <!-- buttons -->
+    <main <!-- buttons -->
       <div class="w-96 m-auto py-10 gap-5">
-        <button class="btn bg-[#B4F461] text-xl font-bold">Donation</button>
-        <button class="btn text-xl font-bold">History</button>
+        <button
+          id="donationAllPeople"
+          class="btn bg-[#B4F461] text-xl font-bold"
+        >
+          Donation
+        </button>
+        <button id="donationAllHistory" class="btn text-xl font-bold">
+          History
+        </button>
       </div>
+      <!-- all card -->
+      <div class="hidden" id="donationMoney">
+        <!-- card 1 -->
+        <div>
+          <div class="card card-side bg-base-100 shadow-xl w-5/6 m-auto">
+            <figure>
+              <img src="./assets/noakhali.png" alt="Movie" />
+            </figure>
+            <div class="card-body w-96">
+              <div class="btn btn-ghos w-[150px]">
+                <img src="./assets/coin.png" alt="" />
+                <p id="donateMoney">0</p>
+                <span>BD</span>
+              </div>
+              <h2 class="card-title font-bold">
+                Donate for Flood at Noakhali, Bangladesh
+              </h2>
+              <p>
+                The recent floods in Noakhali have caused significant damage to
+                homes infrastructure. Your donation will help provide essential
+                supplies and to those affected by this disaster. Every
+                contribution, big or small, makes difference. Please join us in
+                supporting the relief efforts and making a positive impact on
+                the lives of those in need.
+              </p>
 
-      <!-- card 1 -->
-      <div>
-        <div class="card card-side bg-base-100 shadow-xl w-5/6 m-auto">
-          <figure>
-            <img src="./assets/noakhali.png" alt="Movie" />
-          </figure>
-          <div class="card-body w-96">
-            <div class="btn btn-ghos w-[150px]">
-              <img src="./assets/coin.png" alt="" />
-              <p id="donateMoney">0</p>
-              <span>BD</span>
-            </div>
-            <h2 class="card-title font-bold">
-              Donate for Flood at Noakhali, Bangladesh
-            </h2>
-            <p>
-              The recent floods in Noakhali have caused significant damage to
-              homes infrastructure. Your donation will help provide essential
-              supplies and to those affected by this disaster. Every
-              contribution, big or small, makes difference. Please join us in
-              supporting the relief efforts and making a positive impact on the
-              lives of those in need.
-            </p>
-
-            <!-- input field -->
-            <input
-              type="text"
-              placeholder="Write Donation Amount"
-              class="input input-bordered w-full max-w-xl"
-              id="donateNowaKhaliInput"
-            />
-
-            <!-- model -->
-            <div class="justify-center">
-              <!-- The button to open modal -->
-              <label
-                for="my_modal_6"
-                class="btn w-full btn-success"
-                id="donateNowaKhali"
-                >Donate Now</label
-              >
-
-              <!-- Put this part before -->
+              <!-- input field -->
               <input
-                type="checkbox"
-                id="my_modal_6"
-                class="modal-toggle text-center j"
+                type="text"
+                placeholder="Write Donation Amount"
+                class="input input-bordered w-full max-w-xl"
+                id="donateNowaKhaliInput"
               />
-              <div class="modal" role="dialog">
-                <div class="modal-box">
-                  <h3 class="text-4xl font-bold">Congrates!</h3>
-                  <img src="./assets/coin.png" alt="" />
-                  <p class="py-4">You Have Donated For Humankind</p>
-                  <p class="py-4 text-4xl font-bold">Successfully</p>
-                  <div class="modal-action">
-                    <label for="my_modal_6" class="btn"
-                      >Close Conformation</label
-                    >
+
+              <!-- model -->
+              <div class="justify-center">
+                <!-- The button to open modal -->
+                <label
+                  for="my_modal_2"
+                  class="btn w-full btn-success"
+                  id="donateNowaKhali"
+                  >Donate Now</label
+                >
+
+                <!-- Put this part before -->
+                <input
+                  type="checkbox"
+                  id="my_modal_2"
+                  class="modal-toggle text-center j"
+                />
+                <div class="modal" role="dialog">
+                  <div class="modal-box">
+                    <h3 class="text-4xl font-bold">Congrates!</h3>
+                    <img src="./assets/coin.png" alt="" />
+                    <p class="py-4">You Have Donated For Humankind</p>
+                    <p class="py-4 text-4xl font-bold">Successfully</p>
+                    <div class="modal-action">
+                      <label for="my_modal_2" class="btn"
+                        >Close Conformation</label
+                      >
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <!-- card 2 -->
-      <div>
-        <div class="card card-side bg-base-100 shadow-xl w-5/6 m-auto py-10">
-          <figure>
-            <img src="./assets/feni.png" alt="Movie" />
-          </figure>
-          <div class="card-body w-96">
-            <div class="btn btn-ghos w-[150px]">
-              <img src="./assets/coin.png" alt="" />
-              <p id="donateFeni">600 <span>BD</span></p>
-            </div>
-            <h2 class="card-title font-bold">
-              Donate for Flood Relief in Feni,Bangladesh
-            </h2>
-            <p>
-              The recent floods in Feni have devastated local communities,
-              leading to severe disruption and loss. Your generous donation will
-              help provide immediate aid, including food, clean water, and
-              medical supplies, to those affected by this calamity. Together, we
-              can offer crucial support and help rebuild lives in the aftermath
-              of this disaster. Every contribution counts towards making a real
-              difference. Please consider donating today to assist those in
-              urgent need.
-            </p>
+        <!-- card 2 -->
+        <div>
+          <div class="card card-side bg-base-100 shadow-xl w-5/6 m-auto py-10">
+            <figure>
+              <img src="./assets/feni.png" alt="Movie" />
+            </figure>
+            <div class="card-body w-96">
+              <div class="btn btn-ghos w-[150px]">
+                <img src="./assets/coin.png" alt="" />
+                <p id="donateFeni">600 <span>BD</span></p>
+              </div>
+              <h2 class="card-title font-bold">
+                Donate for Flood Relief in Feni,Bangladesh
+              </h2>
+              <p>
+                The recent floods in Feni have devastated local communities,
+                leading to severe disruption and loss. Your generous donation
+                will help provide immediate aid, including food, clean water,
+                and medical supplies, to those affected by this calamity.
+                Together, we can offer crucial support and help rebuild lives in
+                the aftermath of this disaster. Every contribution counts
+                towards making a real difference. Please consider donating today
+                to assist those in urgent need.
+              </p>
 
-            <!-- input field -->
-            <input
-              type="text"
-              id="donateFeniInput"
-              placeholder="Type here"
-              class="input input-bordered w-full max-w-xl"
-            />
-
-            <!-- model -->
-            <div class="justify-center">
-              <!-- The button to open modal -->
-              <label
-                id="donateFeniBtn"
-                for="my_modal_6"
-                class="btn w-full btn-success"
-                >Donate Now</label
-              >
-
-              <!-- Put this part before -->
+              <!-- input field -->
               <input
-                type="checkbox"
-                id="my_modal_6"
-                class="modal-toggle text-center j"
+                type="text"
+                id="donateFeniInput"
+                placeholder="Type here"
+                class="input input-bordered w-full max-w-xl"
               />
-              <div class="modal" role="dialog">
-                <div class="modal-box">
-                  <h3 class="text-4xl font-bold">Congrates!</h3>
-                  <img src="./assets/coin.png" alt="" />
-                  <p class="py-4">You Have Donated For Humankind</p>
-                  <p class="py-4 text-4xl font-bold">Successfully</p>
-                  <div class="modal-action">
-                    <label for="my_modal_6" class="btn"
-                      >Close Conformation</label
-                    >
+
+              <!-- model -->
+              <div class="justify-center">
+                <!-- The button to open modal -->
+                <label
+                  id="donateFeniBtn"
+                  for="my_modal_6"
+                  class="btn w-full btn-success"
+                  >Donate Now</label
+                >
+
+                <!-- Put this part before -->
+                <input
+                  type="checkbox"
+                  id="my_modal_6"
+                  class="modal-toggle text-center j"
+                />
+                <div class="modal" role="dialog">
+                  <div class="modal-box">
+                    <h3 class="text-4xl font-bold">Congrates!</h3>
+                    <img src="./assets/coin.png" alt="" />
+                    <p class="py-4">You Have Donated For Humankind</p>
+                    <p class="py-4 text-4xl font-bold">Successfully</p>
+                    <div class="modal-action">
+                      <label for="my_modal_6" class="btn"
+                        >Close Conformation</label
+                      >
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <!-- card 3 -->
-      <div>
-        <div class="card card-side bg-base-100 shadow-xl w-5/6 m-auto py-10">
-          <figure>
-            <img src="./assets/quota-protest.png" alt="Movie" />
-          </figure>
-          <div class="card-body w-96">
-            <div class="btn btn-ghos w-[150px]">
-              <img src="./assets/coin.png" alt="" />
-              <p>2400 <span>BD</span></p>
-            </div>
-            <h2 class="card-title font-bold">
-              Aid for Injured in the Quota Movement
-            </h2>
-            <p>
-              The recent Quota movement has resulted in numerous injuries and
-              significant hardship for many individuals. Your support is crucial
-              in providing medical assistance, rehabilitation, and necessary
-              supplies to those affected. By contributing, you help ensure that
-              injured individuals receive the care and support they need during
-              this challenging time. Every donation plays a vital role in
-              alleviating their suffering and aiding in their recovery. Please
-              consider making a donation to support these brave individuals in
-              their time of need.
-            </p>
+        <!-- card 3 -->
+        <div>
+          <div class="card card-side bg-base-100 shadow-xl w-5/6 m-auto py-10">
+            <figure>
+              <img src="./assets/quota-protest.png" alt="Movie" />
+            </figure>
+            <div class="card-body w-96">
+              <div class="btn btn-ghos w-[150px]">
+                <img src="./assets/coin.png" alt="" />
+                <p id="donateMovement">2400 <span>BD</span></p>
+              </div>
+              <h2 class="card-title font-bold">
+                Aid for Injured in the Quota Movement
+              </h2>
+              <p>
+                The recent Quota movement has resulted in numerous injuries and
+                significant hardship for many individuals. Your support is
+                crucial in providing medical assistance, rehabilitation, and
+                necessary supplies to those affected. By contributing, you help
+                ensure that injured individuals receive the care and support
+                they need during this challenging time. Every donation plays a
+                vital role in alleviating their suffering and aiding in their
+                recovery. Please consider making a donation to support these
+                brave individuals in their time of need.
+              </p>
 
-            <!-- input field -->
-            <input
-              type="text"
-              placeholder="Type here"
-              class="input input-bordered w-full max-w-xl"
-            />
-
-            <!-- model -->
-            <div class="justify-center">
-              <!-- The button to open modal -->
-              <label for="my_modal_6" class="btn w-full btn-success"
-                >Donate Now</label
-              >
-
-              <!-- Put this part before -->
+              <!-- input field -->
               <input
-                type="checkbox"
-                id="my_modal_6"
-                class="modal-toggle text-center j"
+                type="text"
+                id="donateMovementInput"
+                placeholder="Type here"
+                class="input input-bordered w-full max-w-xl"
               />
-              <div class="modal" role="dialog">
-                <div class="modal-box">
-                  <h3 class="text-4xl font-bold">Congrates!</h3>
-                  <img src="./assets/coin.png" alt="" />
-                  <p class="py-4">You Have Donated For Humankind</p>
-                  <p class="py-4 text-4xl font-bold">Successfully</p>
-                  <div class="modal-action">
-                    <label for="my_modal_6" class="btn"
-                      >Close Conformation</label
-                    >
+
+              <!-- model -->
+              <div class="justify-center">
+                <!-- The button to open modal -->
+                <label
+                  id="donateMovementBtn"
+                  for="my_modal_6"
+                  class="btn w-full btn-success"
+                  >Donate Now</label
+                >
+
+                <!-- Put this part before -->
+                <input
+                  type="checkbox"
+                  id="my_modal_6"
+                  class="modal-toggle text-center j"
+                />
+                <div class="modal" role="dialog">
+                  <div class="modal-box">
+                    <h3 class="text-4xl font-bold">Congrates!</h3>
+                    <img src="./assets/coin.png" alt="" />
+                    <p class="py-4">You Have Donated For Humankind</p>
+                    <p class="py-4 text-4xl font-bold">Successfully</p>
+                    <div class="modal-action">
+                      <label for="my_modal_6" class="btn"
+                        >Close Conformation</label
+                      >
+                    </div>
                   </div>
                 </div>
               </div>
@@ -236,10 +248,23 @@
         </div>
       </div>
     </main>
+
+    <!-- donation history -->
+    <div class="" id="donationFetures">
+      <div
+        class="w-5/6 m-auto py-10 border-2 px-5 text-4xl font-bold rounded-xl"
+      >
+        <p id="donationAllCountMoney">this is tax</p>
+        <br />
+      </div>
+    </div>
     <!-- footer -->
     <footer></footer>
   </body>
 
   <script src="/index.js"></script>
   <script src="/donateFeni.js"></script>
+  <script src="/movement.js"></script>
+  <script src="/fetures.js"></script>
+  <script src="/donation.js"></script>
 </html>
